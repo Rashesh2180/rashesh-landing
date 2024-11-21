@@ -44,8 +44,19 @@ body {
   
  }
  .home-hero-carasol .swiper-pagination{
-  position: relative !important;
 
+ }
+ .rating-slider .swiper-pagination{
+  position: relative !important;
+  top: 60px !important;
+  
+
+
+ }
+ .rating-slider .swiper-pagination-bullet-active{
+  background-color: black !important;
+  width: 30px !important;
+  border-radius:10px !important
  }
 
  .swiper-nav-btns button {

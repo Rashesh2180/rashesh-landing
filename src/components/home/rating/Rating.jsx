@@ -56,15 +56,17 @@ const data = [
 ];
 const Rating = () => {
   return (
-    <div className="sm:py-20 py-10 xl:pl-16 lg:pl-10 pl-5 flex items-center max-w-[1500px] overflow-x-hidden mx-auto relative">
-      <div className="pr-10 max-w-[350px] shrink-0 w-full">
+    <div className=" lg:my-16 lg:py-10 xl:pl-16 lg:pl-10 px-5 flex max-lg:flex-col items-center max-w-[1500px]  mx-auto relative">
+      <div className="lg:pr-10 lg:max-w-[350px] shrink-0 w-full mx-auto max-lg:flex justify-center flex-col items-center">
         <h1 className="text-secondarys1 text-xs font-roboto">TESTIMONIAL</h1>
+        <div className=" max-lg:flex items-center sm:gap-5 max-sm:flex-col">
         <h2 className="text-5xl font-[emoji] font-medium mt-2 text-secondary">
           Clients loves
         </h2>
         <h3 className="text-5xl font-[emoji] font-medium text-primary mt-2">
           Talent Spine.
         </h3>
+        </div>
         <h2 className="mt-5 font-roboto font-medium text-2xl">
           <span className="text-primary">A+</span> Rating
         </h2>
@@ -72,18 +74,31 @@ const Rating = () => {
           Avg rating 4.8 makes us best market place.
         </p>
       </div>
-      <div className=" z-[1000]">
+      <div className=" z-[1000] w-full lg:overflow-x-hidden">
         {data.length > 0 ? (
           <div className="">
             <Swiper
+             spaceBetween={20}
               pagination={{
                 dynamicBullets: true,
+                clickable:true
               }}
               modules={[Pagination]}
-              className="mySwiper !p-2"
+              breakpoints={{
+                640: {
+                  slidesPerView: 1,
+                },
+                768: {
+                  slidesPerView: 2,
+                },
+                1280: {
+                  slidesPerView: 3,
+                },
+              }}
+              className="mySwiper !p-2 rating-slider !py-20 !mx-auto"
             >
               {data.map((ele) => (
-                <SwiperSlide key={ele.id} className="max-w-[370px] mr-10">
+                <SwiperSlide key={ele.id} className="max-w-[370px] sm:mr-10 w-full mx-auto">
                   <div className="p-6 bg-white shadow-xl rounded-[24px] hover:border-t-2 border-primary">
                     <h1 className="text-primary font-medium font-roboto text-2xl">
                       {ele.title}
@@ -125,11 +140,9 @@ const Rating = () => {
         )}
       </div>
 
-      {/* Full-screen Red Box */}
-      <div className="rounded-3xl flex  h-full w-full absolute top-0 right-0 z-10">
+      <div className="rounded-3xl flex  h-full w-full absolute top-0 right-0 z-10 max-lg:hidden">
         <div className=" flex-1 h-full"></div>
         <div className="flex-1 h-full bg-[#E6F3FC] rounded-tl-r30 rounded-bl-r30"></div>
-
       </div>
     </div>
   );

@@ -38,7 +38,7 @@ const Header = () => {
   };
 
   return (
-    <div className="max-w-[1710px] mx-auto lg:px-8 px-3 py-3 shadow-lg  bg-white z-50 sticky top-0 ">
+    <div className="max-w-[1710px] mx-auto lg:px-8 px-3 py-3 shadow-lg  bg-white z-[100000] sticky top-0 ">
       <div className="flex justify-between items-center gap-2">
         <div className="max-w-[200px] h-12">
           <img

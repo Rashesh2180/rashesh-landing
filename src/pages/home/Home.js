@@ -20,7 +20,7 @@ const Home = () => {
       <TrendingPackage/>
       <DigitalSkill/>
       <Keys/>
-      {/* <Rating/> */}
+      <Rating/>
       <LatestBlog/>
       <DateSelect/>
     </div>
