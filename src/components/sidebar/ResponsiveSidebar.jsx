@@ -77,7 +77,7 @@ const ResponsiveSidebar = () => {
   ];
   return (
     <div>
-      <div className="w-56 bg-white px-2 py-4 pb-24 lg:hidden shadow-xl  min-h-screen max-h-[90vh]   border border-bordercolor  overflow-y-auto ">
+      <div className="w-56 bg-white px-2 py-4 pb-40 lg:hidden shadow-xl  min-h-screen max-h-[90vh]   border border-bordercolor  overflow-y-auto ">
         <div className="flex items-center  gap-1">
           <div className=" h-16 w-16 rounded-full  object-cover object-top mx-auto relative">
             <img
