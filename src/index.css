@@ -86,3 +86,6 @@ body {
 .form-small{
   @apply leading-4 mt-1 text-xs text-secondarys1 font-inter
 }
+/* .toggle-responsive{
+  @apply absolute top-5 right-0
+} */

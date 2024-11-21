@@ -9,7 +9,16 @@ import ForgotPassword from "../pages/forgotpassword/ForgotPassword";
 import NewCredentials from "../pages/forgotpassword/NewCredentials";
 import DashboardLayout from "../dashboardlayout/DashboardLayout.jsx";
 import Profile from "../pages/profile/Profile";
-
+import Booking from "../pages/booking/Booking.jsx";
+import PriorityDm from "../pages/priority/PriorityDm.jsx";
+import Testimonials from "../pages/testimonials/Testimonials.jsx";
+import Post from "../pages/post/Post.jsx";
+import Communicate from "../pages/communicate/Communicate.jsx";
+import Calender from "../pages/calender/Calender.jsx";
+import Service from "../pages/service/Service.jsx";
+import Payments from "../pages/payments/Payments.jsx";
+import SalesReport from "../pages/salesreport/SalesReport.jsx";
+import TaxInfromation from "../pages/taxinformation/TaxInfromation.jsx";
 
 const router = createBrowserRouter([
   {
@@ -45,8 +54,47 @@ const router = createBrowserRouter([
           {
             path: "profile",
             element: <Profile />,
-          }
-          
+          },
+          {
+            path: "booking",
+            element: <Booking />,
+          },
+          {
+            path: "prioritydm",
+            element: <PriorityDm />,
+          },
+          {
+            path: "testimonials",
+            element: <Testimonials />,
+          },
+          {
+            path: "posts",
+            element: <Post />,
+          },
+          {
+            path: "communicate",
+            element: <Communicate />,
+          },
+          {
+            path: "calendar",
+            element: <Calender />,
+          },
+          {
+            path: "services",
+            element: <Service />,
+          },
+          {
+            path: "payments",
+            element: <Payments />,
+          },
+          {
+            path: "salesreport",
+            element: <SalesReport />,
+          },
+          {
+            path: "taxinformation",
+            element: <TaxInfromation />,
+          },
         ],
       },
     ],
