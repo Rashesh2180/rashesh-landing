@@ -144,6 +144,7 @@ const Rating = () => {
         <div className=" flex-1 h-full"></div>
         <div className="flex-1 h-full bg-[#E6F3FC] rounded-tl-r30 rounded-bl-r30"></div>
       </div>
+      <img src="/assets/svg/work/arrow.svg" alt="" className=" absolute top-0 left-[20%] max-lg:hidden  w-[150px] h-14" />
     </div>
   );
 };

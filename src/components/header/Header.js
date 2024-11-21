@@ -80,7 +80,7 @@ const Header = () => {
             </NavLink>
           </div>
           <button className="bg-primary rounded-md py-3 px-6 text-sm font-bold text-white uppercase font-raleway">
-            sign up
+            <NavLink to="/signup">sign up</NavLink>
           </button>
         </div>
 

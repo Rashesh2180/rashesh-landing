@@ -2,7 +2,8 @@ import React from 'react'
 
 const Testimonials = () => {
   return (
-    <div>
+    <div className=' text-center py-20 text-3xl'>
+      Testimonials
       
     </div>
   )

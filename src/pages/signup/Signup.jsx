@@ -89,7 +89,7 @@ const Login = () => {
               </p>
             </div>
             <button className="w-full bg-success text-white mt-5 sm:p-3 p-2 rounded-lg text-sm sm:text-sm xl-2:p-4 xl-2:text-xl font-inter font-bold">
-              Login
+              Sign up
             </button>
             <NavLink to="/forgotpassword"  className="ml-auto flex justify-end mt-3 font-inter text-sm font-bold text-success underline">
               Forgot Password?

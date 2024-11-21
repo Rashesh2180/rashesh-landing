@@ -2,7 +2,7 @@ import React from "react";
 
 const DateSelect = () => {
   return (
-    <div className=" lg:pt-[200px] ">
+    <div className=" lg:pt-[200px]  relative">
       <div className="bg-custom max-lg:py-10 ">
         <div className="flex  mx-auto max-w-[1440px] max-lg:flex-col xl:px-32 sm:px-10 px-5 xl:gap-40  max-sm:gap-5 gap-10">
           <div className=" lg:py-20 max-lg:pt-40 flex-1">
@@ -108,6 +108,7 @@ const DateSelect = () => {
           </div>
         </div>
       </div>
+      <img src="/assets/svg/wave/wave.svg" className=" absolute top-0 left-44 max-lg:hidden w-[100px] h-12" alt="" />
     </div>
   );
 };

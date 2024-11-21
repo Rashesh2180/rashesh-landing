@@ -2,9 +2,10 @@ import React from 'react'
 
 const Communicate = () => {
   return (
-    <div>
-      
-    </div>
+    <div className=' text-center py-20 text-3xl'>
+    Communicate
+    
+  </div>
   )
 }
 
