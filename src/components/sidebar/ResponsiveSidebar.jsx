@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { CiGrid41 } from "react-icons/ci";
@@ -6,7 +6,7 @@ import { FiPhoneCall } from "react-icons/fi";
 import { BiMessageSquareDetail, BiImages } from "react-icons/bi";
 import { LuUserSquare2 } from "react-icons/lu";
 const ResponsiveSidebar = () => {
-    const location = useLocation();
+  const location = useLocation();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -77,24 +77,23 @@ const ResponsiveSidebar = () => {
   ];
   return (
     <div>
-      <aside className="w-56 bg-white px-2 py-4 lg:hidden shadow-xl h-screen  border border-bordercolor  overflow-y-auto ">
-       
+      <div className="w-56 bg-white px-2 py-4 pb-24 lg:hidden shadow-xl  min-h-screen max-h-[90vh]   border border-bordercolor  overflow-y-auto ">
         <div className="flex items-center  gap-1">
-        <div className=" h-16 w-16 rounded-full  object-cover object-top mx-auto relative">
-          <img
-            src="https://images.pexels.com/photos/2955376/pexels-photo-2955376.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-            className=" h-full w-full rounded-full  object-cover object-top mx-auto "
-            alt=""
-          />
-          <img
-            src="/assets/svg/profile/bluetik.svg"
-            alt=""
-            className=" h-6 w-6 absolute bottom-1  -right-2 transform"
-          />
-        </div>
-        <div className=" p-2 max-w-32 mx-auto rounded-lg text-center bg-[#EFF6F3] font-inter text-xs font-bold">
-          Account ID : 034
-        </div>
+          <div className=" h-16 w-16 rounded-full  object-cover object-top mx-auto relative">
+            <img
+              src="https://images.pexels.com/photos/2955376/pexels-photo-2955376.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              className=" h-full w-full rounded-full  object-cover object-top mx-auto "
+              alt=""
+            />
+            <img
+              src="/assets/svg/profile/bluetik.svg"
+              alt=""
+              className=" h-6 w-6 absolute bottom-1  -right-2 transform"
+            />
+          </div>
+          <div className=" p-2 max-w-32 mx-auto rounded-lg text-center bg-[#EFF6F3] font-inter text-xs font-bold">
+            Account ID : 034
+          </div>
         </div>
         <div className=" p-2 shadow-xl border-t-2 mt-3 flex flex-col justify-center items-center border-success rounded-lg">
           <h1 className=" text-xs font-inter text-success font-bold">
@@ -105,6 +104,24 @@ const ResponsiveSidebar = () => {
           </h1>
           <button className=" mt-3 py-2 px-4 text-xs text-white font-medium font-inter  rounded-lg bg-[#0D58AC]">
             Share Profile
+          </button>
+        </div>
+        <div className=" mt-3">
+          <button className="p-2 w-full  bg-success py-3 xl:px-7 px-4 shadow-xl font-bold font-inter xl:text-sm text-xs rounded-2xl text-white">
+            Visit Candidate dashboard
+          </button>
+          <button className="flex  w-full mt-2 items-center gap-[10px] border justify-center bg-white shadow-xl border-success rounded-2xl py-3 px-3">
+            <img src="/assets/svg/dashboardheader/earth.svg" alt="" />
+            <div className="text-success text-sm font-bold font-inter border-l border-success pl-[10px]">
+              Online
+            </div>
+            <div className="bg-success h-2 w-2 rounded-full "></div>
+          </button>
+          <button className="flex mt-2 w-full items-center gap-[10px] border  justify-center bg-white shadow-2xl border-success rounded-2xl py-3 px-4">
+            <div className="text-black text-sm font-inter">How it works</div>
+            <div className="bg-[#EFF6F3] p-1 rounded-xl">
+              <img src="/assets/svg/dashboardheader/youtube.svg" alt="" />
+            </div>
           </button>
         </div>
 
@@ -198,7 +215,7 @@ const ResponsiveSidebar = () => {
             <span className="text-base font-inter text-[#FF0000]">Logout</span>
           </button>
         </div>
-      </aside>
+      </div>
     </div>
   );
 };

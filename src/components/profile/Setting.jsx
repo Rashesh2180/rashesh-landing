@@ -6,7 +6,7 @@ const Setting = () => {
     <div className="form-basic-need h-full">
       <h1 className="form-heading">Settings</h1>
       <div className="mt-8 border border-bordercolor rounded-r30 overflow-hidden">
-        <div className="p-5 flex gap-2 border-b border-bordercolor ">
+        <div className="p-5 flex max-sm:flex-col gap-2 border-b border-bordercolor ">
           <div>
             <h1 className="font-inter font-bold text-sm text-start">
               Timezone
@@ -19,7 +19,7 @@ const Setting = () => {
             <option value="">(GMT+5:30) Chennai, Kolkata,...  |</option>
           </select>
         </div>
-        <div className="p-5 flex gap-2 border-b border-bordercolor ">
+        <div className="p-5 flex gap-2 border-b max-sm:flex-col border-bordercolor ">
           <div>
             <h1 className="font-inter font-bold text-sm text-start">Sell in</h1>
             <h3 className="max-w-[250px] leading-4 mt-1 text-xs text-secondarys1 font-inter">
@@ -30,7 +30,7 @@ const Setting = () => {
             <option value="">Indian Rupee (₹)</option>
           </select>
         </div>
-        <div className="p-5 flex gap-2 justify-between  ">
+        <div className="p-5 flex gap-2 max-sm:flex-col justify-between  ">
           <div>
             <h1 className="font-inter font-bold text-sm text-start">Payouts</h1>
             <h3 className=" leading-4 mt-1 text-xs text-secondarys1 font-inter">
