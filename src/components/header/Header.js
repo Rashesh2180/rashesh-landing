@@ -6,9 +6,7 @@ import { IoMdClose } from "react-icons/io";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
-  const location = useLocation(); 
-
- 
+  const location = useLocation();
 
   const handleToggle = () => {
     setToggle((prev) => !prev);
@@ -16,15 +14,19 @@ const Header = () => {
 
   useEffect(() => {
     if (toggle) {
-      document.body.style.overflow = "hidden"; 
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "auto"; 
+      document.body.style.overflow = "auto";
     }
     return () => {
-      document.body.style.overflow = "auto"; 
+      document.body.style.overflow = "auto";
     };
   }, [toggle]);
-  const hiddenRoute = location.pathname === "/login" || location.pathname === "/signup";
+  const hiddenRoute =
+    location.pathname === "/login" ||
+    location.pathname === "/signup" ||
+    location.pathname.startsWith("/forgotpassword")||
+    location.pathname.startsWith("/dashboard");
   if (hiddenRoute) {
     return null;
   }
@@ -46,7 +48,6 @@ const Header = () => {
           />
         </div>
 
-      
         <div className="flex items-center gap-2 max-lg:hidden">
           {navlist &&
             navlist.map((ele) => (
@@ -74,7 +75,9 @@ const Header = () => {
             />
           </div>
           <div>
-            <NavLink to="login" className="font-bold text-sm font-raleway">LOG IN</NavLink>
+            <NavLink to="login" className="font-bold text-sm font-raleway">
+              LOG IN
+            </NavLink>
           </div>
           <button className="bg-primary rounded-md py-3 px-6 text-sm font-bold text-white uppercase font-raleway">
             sign up
@@ -103,21 +106,23 @@ const Header = () => {
                 className="h-4 w-4"
               />
             </div>
-           <div className=" flex flex-col  gap-3">
-           {navlist &&
-              navlist.map((ele) => (
-                <NavLink
-                  className={`${getLinkClass(ele.href)} py-3 text-xl`}
-                  to={ele.href}
-                  key={ele.href}
-                >
-                  {ele.list}
-                </NavLink>
-              ))}
-           </div>
+            <div className=" flex flex-col  gap-3">
+              {navlist &&
+                navlist.map((ele) => (
+                  <NavLink
+                    className={`${getLinkClass(ele.href)} py-3 text-xl`}
+                    to={ele.href}
+                    key={ele.href}
+                  >
+                    {ele.list}
+                  </NavLink>
+                ))}
+            </div>
             <div className="mt-5 flex-col flex items-start gap-2">
               <div>
-                <NavLink to="login" className="font-bold text-sm">LOG IN</NavLink>
+                <NavLink to="login" className="font-bold text-sm">
+                  LOG IN
+                </NavLink>
               </div>
               <button className="mt-5 bg-primary rounded-md py-3 px-6 text-sm font-bold text-white uppercase">
                 sign up

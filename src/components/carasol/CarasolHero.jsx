@@ -6,15 +6,22 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { NavLink } from "react-router-dom";
 
 const CarasolHero = () => {
   return (
     <div className="max-w-[1650px] mx-auto xl:px-16 px-5 lg:px-10 ">
       <Swiper
-        pagination={true}
-        modules={[Pagination]}
+      autoplay={{
+        delay: 10000,
+        
+        disableOnInteraction: false,
+      }}
+      pagination={{
+        clickable: true,
+      }}
+      modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper home-hero-carasol"
       >
         <SwiperSlide>

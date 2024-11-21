@@ -2,9 +2,13 @@ import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
 const Footer = () => {
-  const location = useLocation(); 
+  const location = useLocation();
 
-  const hiddenRoute = location.pathname === "/login" || location.pathname === "/signup";
+  const hiddenRoute =
+    location.pathname === "/login" ||
+    location.pathname === "/signup" ||
+    location.pathname.startsWith("/forgotpassword") ||
+    location.pathname.startsWith("/dashboard");
   if (hiddenRoute) {
     return null;
   }
@@ -158,8 +162,9 @@ const Footer = () => {
         </ul>
       </div>
       <div className=" mt-10 bg-[#FFFFFF] h-[1px] opacity-20"></div>
-      <p className=" text-center pt-8 text-sm font-roboto text-white">Copyright © 2024. Talent Spine</p>
-      
+      <p className=" text-center pt-8 text-sm font-roboto text-white">
+        Copyright © 2024. Talent Spine
+      </p>
     </div>
   );
 };

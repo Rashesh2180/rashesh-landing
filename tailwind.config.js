@@ -26,6 +26,10 @@ module.exports = {
       },
       screens:{
         'xl-2': '1600px',
+        'xl-25':"1025px"
+      },
+      borderRadius:{
+        "r30":"30px"
       }
     },
   },

@@ -56,7 +56,7 @@ const Keys = () => {
       />
 
       {/* bussiness start */}
-      <div className=" sm:pt-24 pt-10">
+      <div className=" sm:pt-36 pt-10 relative">
         <h1 className=" section-title  leading-[50px] text-center max-w-[1050px] mx-auto ">
           We’ve helped millions of owners create a business that works.
         </h1>
@@ -79,6 +79,9 @@ const Keys = () => {
             <img src={ele} alt="" className=" object-cover"/>
           ))}
         </div>
+        <img src="/assets/svg/work/plane.svg" alt="" className="  w-[180px] h-[150px]  transform rotate-90 max-lg:hidden absolute top-5 xl:top-16 xl:left-3 left-1" />
+        <img src="/assets/svg/work/bulb.svg" alt="" className="  w-[100px] h-[100px] absolute top-10 right-5 max-lg:hidden" />
+
       </div>
       {/* bussiness end */}
     </div>

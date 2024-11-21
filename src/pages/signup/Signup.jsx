@@ -20,17 +20,35 @@ const Login = () => {
       <div className="flex flex-col  flex-grow justify-center px-5 py-5 mt-[10vh]"> 
         <div className="max-w-[600px] mx-auto w-full z-50 bg-white sm:p-6 p-4 border-t-2 border-success rounded-[30px] shadow-xl">
           <div className="flex justify-start items-center bg-success max-w-[250px] rounded-[75px] mx-auto">
-            <button className="py-2 text-base font-bold rounded-[75px] px-10 text-white font-roboto bg-[#0D58AC]">
-              <NavLink  to="/login">Login</NavLink>
+          <button className="py-2 text-sm font-bold rounded-r-[75px] grow px-10 text-white font-roboto bg-transparent">
+              <NavLink to="/login">Login</NavLink>
             </button>
-            <button className="py-2 text-sm font-bold rounded-r-[75px] px-10 text-white font-roboto bg-transparent">
-              <NavLink to="/signup">Sign-up</NavLink>
+            
+            <button className="py-2 text-base font-bold rounded-[75px] px-8 text-white font-roboto bg-[#0D58AC]">
+              <NavLink  to="/signup">Sign-up</NavLink>
             </button>
+           
           </div>
+          <h1 className=" font-[emoji] text-5xl font-semibold text-center my-5">Create <span className=" text-success">your page</span></h1>
+          <h1 className=" font-inter text-sm  text-secondarys1 text-center my-5">Starting with topmate is easy, fast and free</h1>
+
+          
           <form action="" className="mt-5">
-            <label
+          <label
               htmlFor="email"
               className="text-secondarys1 font-inter block text-base font-bold max-sm:text-sm "
+            >
+              Name
+            </label>
+            <input
+              type="email"
+              className="mt-2 border border-bordercolor rounded-lg w-full sm:py-2 py-2 xl-2:py-5 outline-none text-secondary px-4"
+              placeholder="Enter your full name"
+              id="email"
+            />
+            <label
+              htmlFor="email"
+              className="text-secondarys1 mt-3 font-inter block text-base font-bold max-sm:text-sm "
             >
               Email
             </label>
@@ -73,7 +91,7 @@ const Login = () => {
             <button className="w-full bg-success text-white mt-5 sm:p-3 p-2 rounded-lg text-sm sm:text-sm xl-2:p-4 xl-2:text-xl font-inter font-bold">
               Login
             </button>
-            <NavLink to="/forgotpassword" className="ml-auto flex justify-end mt-3 font-inter text-sm font-bold text-success underline">
+            <NavLink to="/forgotpassword"  className="ml-auto flex justify-end mt-3 font-inter text-sm font-bold text-success underline">
               Forgot Password?
             </NavLink>
             <div className="mt-4 flex justify-between items-center gap-7">
@@ -92,17 +110,7 @@ const Login = () => {
                   Continue with Google
                 </p>
               </button>
-              <button className="sm:p-3 p-3 border-2 flex-1 border-bordercolor rounded-xl max-sm:w-full justify-start gap-2 flex  items-center">
-
-                <img
-                  src="/assets/svg/login/image 14.svg"
-                  alt=""
-                  className="h-[22px] w-[22px]"
-                />
-                <p className="text-secondarys1 font-inter font-bold  text-[10px]">
-                Continue with LinkedIn
-                </p>
-              </button>
+             
               <button className="sm:p-3 p-3 border-2 flex-1 bg-primary rounded-xl max-sm:w-full justify-start gap-2 flex  items-center">
 
                 <img
@@ -116,8 +124,8 @@ const Login = () => {
               </button>
             </div>
             <div className="sm:mt-6 mt-4 text-center font-inter text-secondarys1 text-sm">
-              Don’t have an account?{" "}
-              <NavLink to="/signup" className="text-success underline font-semibold">Sign-up</NavLink>
+            Have an account? 
+              <NavLink to="/login" className="text-success underline font-semibold">Sign-in</NavLink>
             </div>
           </form>
         </div>
