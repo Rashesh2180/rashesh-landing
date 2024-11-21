@@ -89,3 +89,20 @@ body {
 /* .toggle-responsive{
   @apply absolute top-5 right-0
 } */
+
+.swiper-container {
+  margin-top: 50px;
+  position: relative;
+}
+
+.arrow-left {
+  position: absolute !important;
+  top: 50% !important;
+  left: 0;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}

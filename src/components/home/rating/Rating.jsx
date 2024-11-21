@@ -5,7 +5,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { FaStar } from "react-icons/fa6";
 
-
 import { Pagination } from "swiper/modules";
 
 const data = [
@@ -57,23 +56,23 @@ const data = [
 ];
 const Rating = () => {
   return (
-    <div className=" sm:py-20 py-10 xl:pl-16 lg:pl-10 pl-5 flex items-center max-w-[1500px] overflow-x-hidden mx-auto  relative">
-      <div className=" pr-10 max-w-[350px] shrink-0 w-full">
-        <h1 className=" text-secondarys1 text-xs font-roboto">TESTIMONIAL</h1>
-        <h2 className=" text-5xl font-[emoji] font-medium mt-2 text-secondary">
+    <div className="sm:py-20 py-10 xl:pl-16 lg:pl-10 pl-5 flex items-center max-w-[1500px] overflow-x-hidden mx-auto relative">
+      <div className="pr-10 max-w-[350px] shrink-0 w-full">
+        <h1 className="text-secondarys1 text-xs font-roboto">TESTIMONIAL</h1>
+        <h2 className="text-5xl font-[emoji] font-medium mt-2 text-secondary">
           Clients loves
         </h2>
-        <h3 className=" text-5xl  font-[emoji] font-medium text-primary mt-2">
+        <h3 className="text-5xl font-[emoji] font-medium text-primary mt-2">
           Talent Spine.
         </h3>
-        <h2 className=" mt-5 font-roboto font-medium text-2xl">
-          <span className=" text-primary">A+</span> Rating
+        <h2 className="mt-5 font-roboto font-medium text-2xl">
+          <span className="text-primary">A+</span> Rating
         </h2>
-        <p className=" text-xs mt-1 text-secondarys1 font-roboto">
+        <p className="text-xs mt-1 text-secondarys1 font-roboto">
           Avg rating 4.8 makes us best market place.
         </p>
       </div>
-      <div className="">
+      <div className=" z-[1000]">
         {data.length > 0 ? (
           <div className="">
             <Swiper
@@ -81,32 +80,38 @@ const Rating = () => {
                 dynamicBullets: true,
               }}
               modules={[Pagination]}
-              className="mySwiper !p-2 "
+              className="mySwiper !p-2"
             >
               {data.map((ele) => (
-                <SwiperSlide key={ele.id} className=" max-w-[370px] mr-10 ">
-                  <div className=" p-6 bg-white shadow-xl  rounded-[24px] hover:border-t-2 border-primary">
-                    <h1 className=" text-primary font-medium font-roboto text-2xl">{ele.title}</h1>
-                    <div className=" flex items-center gap-1  mt-2">
+                <SwiperSlide key={ele.id} className="max-w-[370px] mr-10">
+                  <div className="p-6 bg-white shadow-xl rounded-[24px] hover:border-t-2 border-primary">
+                    <h1 className="text-primary font-medium font-roboto text-2xl">
+                      {ele.title}
+                    </h1>
+                    <div className="flex items-center gap-1 mt-2">
                       {Array.from({ length: 5 }).map((_, index) => (
-                        <FaStar className=" text-xs  text-[#FBD300]" />
+                        <FaStar className="text-xs text-[#FBD300]" />
                       ))}
                     </div>
-                    <div className=" mt-8 leading-8 text-secondary pb-8 border-b-2 border-bordercolor font-roboto text-lg">
-                        {ele.text}
-
+                    <div className="mt-8 leading-8 text-secondary pb-8 border-b-2 border-bordercolor font-roboto text-lg">
+                      {ele.text}
                     </div>
-                    <div className=" mt-6 flex justify-between items-center">
-                        <div className=" flex items-center gap-3">
-                            <img src={ele.avtar} alt=""  className=" h-10 rounded-full object-top object-cover w-10"/>
-                            <div>
-                                <h2 className=" font-roboto text-sm text-secondary font-medium">{ele.reviewr}</h2>
-                                <h2 className=" font-roboto text-xs text-secondarys1">{ele.city}</h2>
-
-                            </div>
-
+                    <div className="mt-6 flex justify-between items-center">
+                      <div className="flex items-center gap-3">
+                        <img
+                          src={ele.avtar}
+                          alt=""
+                          className="h-10 rounded-full object-top object-cover w-10"
+                        />
+                        <div>
+                          <h2 className="font-roboto text-sm text-secondary font-medium">
+                            {ele.reviewr}
+                          </h2>
+                          <h2 className="font-roboto text-xs text-secondarys1">
+                            {ele.city}
+                          </h2>
                         </div>
-
+                      </div>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -114,12 +119,16 @@ const Rating = () => {
             </Swiper>
           </div>
         ) : (
-          <p className=" py-10 text-3xl text-red-600 text-center">
-            Data not avaialble
+          <p className="py-10 text-3xl text-red-600 text-center">
+            Data not available
           </p>
         )}
       </div>
-      <div className=" rounded-3xl  bg-[#E6F3FC] h-[400px] absolute  top-2 right-0  z-50">
+
+      {/* Full-screen Red Box */}
+      <div className="rounded-3xl flex  h-full w-full absolute top-0 right-0 z-10">
+        <div className=" flex-1 h-full"></div>
+        <div className="flex-1 h-full bg-[#E6F3FC] rounded-tl-r30 rounded-bl-r30"></div>
 
       </div>
     </div>
