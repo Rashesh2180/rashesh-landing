@@ -1,5 +1,3 @@
-// src/router/index.jsx
-
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Home from "../pages/home/Home";
@@ -8,7 +6,9 @@ import Signup from "../pages/signup/Signup";
 import ForgotPassword from "../pages/forgotpassword/ForgotPassword";
 import NewCredentials from "../pages/forgotpassword/NewCredentials";
 import DashboardLayout from "../dashboardlayout/DashboardLayout.jsx";
-import Profile from "../pages/profile/Profile";
+import Dashboadprofile from "../pages/dahboardprofile/Profile.jsx";
+import Profile from "../pages/profile/Profile.jsx";
+
 import Booking from "../pages/booking/Booking.jsx";
 import PriorityDm from "../pages/priority/PriorityDm.jsx";
 import Testimonials from "../pages/testimonials/Testimonials.jsx";
@@ -38,6 +38,10 @@ const router = createBrowserRouter([
         element: <Signup />,
       },
       {
+        path: "profile",
+        element: <Profile />,
+      },
+      {
         path: "forgotpassword",
         element: <ForgotPassword />,
         children: [
@@ -53,7 +57,7 @@ const router = createBrowserRouter([
         children: [
           {
             path: "profile",
-            element: <Profile />,
+            element: <Dashboadprofile />,
           },
           {
             path: "booking",

@@ -8,7 +8,7 @@ const Footer = () => {
     location.pathname === "/login" ||
     location.pathname === "/signup" ||
     location.pathname.startsWith("/forgotpassword") ||
-    location.pathname.startsWith("/dashboard");
+    location.pathname.startsWith("/dashboard") || location.pathname.startsWith("/profile");
   if (hiddenRoute) {
     return null;
   }
