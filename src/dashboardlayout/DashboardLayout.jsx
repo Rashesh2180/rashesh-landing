@@ -13,7 +13,7 @@ const DashboardLayout = () => {
       <Sidebar/>
      
 
-      <main className="flex-1 lg:ml-56 lg:p-1">
+      <main className="flex-1 lg:ml-56  overflow-x-hidden lg:p-1">
         <DashBoardHeader/>
 
         <Outlet />
