@@ -26,7 +26,7 @@ const Header = () => {
     location.pathname === "/login" ||
     location.pathname === "/signup" ||
     location.pathname.startsWith("/forgotpassword")||
-    location.pathname.startsWith("/dashboard") || location.pathname.startsWith("/profile");
+    location.pathname.startsWith("/dashboard") || location.pathname.startsWith("/profile") || location.pathname.startsWith("/auth")
 
   if (hiddenRoute) {
     return null;
@@ -76,12 +76,12 @@ const Header = () => {
             />
           </div>
           <div>
-            <NavLink to="login" className="font-bold text-sm font-raleway">
+            <NavLink to="auth" className="font-bold text-sm font-raleway">
               LOG IN
             </NavLink>
           </div>
           <button className="bg-primary rounded-md py-3 px-6 text-sm font-bold text-white uppercase font-raleway">
-            <NavLink to="/signup">sign up</NavLink>
+            <NavLink to="auth">sign up</NavLink>
           </button>
         </div>
 
@@ -121,12 +121,12 @@ const Header = () => {
             </div>
             <div className="mt-5 flex-col flex items-start gap-2">
               <div>
-                <NavLink to="login" className="font-bold text-sm">
+                <NavLink to="auth" className="font-bold text-sm">
                   LOG IN
                 </NavLink>
               </div>
               <button className="mt-5 bg-primary rounded-md py-3 px-6 text-sm font-bold text-white uppercase">
-                sign up
+              <NavLink to="auth" className="font-bold text-sm">Signup</NavLink>
               </button>
             </div>
           </div>

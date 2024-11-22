@@ -1,8 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Home from "../pages/home/Home";
-import Login from "../pages/login/Login";
-import Signup from "../pages/signup/Signup";
+
 import ForgotPassword from "../pages/forgotpassword/ForgotPassword";
 import NewCredentials from "../pages/forgotpassword/NewCredentials";
 import DashboardLayout from "../dashboardlayout/DashboardLayout.jsx";
@@ -19,6 +18,7 @@ import Service from "../pages/service/Service.jsx";
 import Payments from "../pages/payments/Payments.jsx";
 import SalesReport from "../pages/salesreport/SalesReport.jsx";
 import TaxInfromation from "../pages/taxinformation/TaxInfromation.jsx";
+import Auth from "../pages/auth/Auth.jsx";
 
 const router = createBrowserRouter([
   {
@@ -30,13 +30,10 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "login",
-        element: <Login />,
+        path: "auth",
+        element: <Auth />,
       },
-      {
-        path: "signup",
-        element: <Signup />,
-      },
+    
       {
         path: "profile",
         element: <Profile />,
