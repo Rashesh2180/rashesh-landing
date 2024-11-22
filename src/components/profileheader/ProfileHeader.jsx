@@ -4,7 +4,7 @@ import { FaBars } from "react-icons/fa";
 
 const ProfileHeader = () => {
   return (
-    <div className="profile-aligment  py-5 flex justify-between items-center gap-3">
+    <div className="profile-aligment  sticky top-0 z-50 bg-white py-5 flex justify-between items-center gap-3">
        
       <img
         src="/assets/svg/login/PATHMOVER LOGO.svg"
