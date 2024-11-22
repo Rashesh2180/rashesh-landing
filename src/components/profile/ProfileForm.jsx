@@ -39,7 +39,7 @@ const ProfileForm = () => {
           <input
             type="text"
             placeholder="pathmover / | testing_name02"
-            className=" w-full border p-2 text-sm  rounded-lg outline-none border-bordercolor"
+            className=" w-full border p-2 text-sm  rounded-lg !mt-1 outline-none border-bordercolor"
           />
           <button className="p-2 h-10 w-10 bg-[#CCEBC7] flex shrink-0 items-center justify-center rounded-full ml-auto">
             <img
@@ -65,7 +65,7 @@ const ProfileForm = () => {
             >
               First Name
             </label>
-            <div className=" mt-1 rounded-lg outline-none border overflow-hidden border-bordercolor flex justify-between items-center">
+            <div className=" mt-2 rounded-lg  outline-none border overflow-hidden border-bordercolor flex justify-between items-center">
               <input
                 type="text"
                 placeholder="Flyboard"
@@ -83,7 +83,7 @@ const ProfileForm = () => {
             >
               Last Name
             </label>
-            <div className=" mt-1 rounded-lg outline-none border overflow-hidden border-bordercolor flex justify-between items-center">
+            <div className=" mt-2 rounded-lg outline-none border overflow-hidden border-bordercolor flex justify-between items-center">
               <input
                 type="text"
                 placeholder="Ventures"
@@ -103,7 +103,7 @@ const ProfileForm = () => {
             Your pathmover introduction{" "}
             <span className="  text-[#FF0000]">*</span>
           </label>
-          <div className=" mt-1 rounded-lg outline-none border overflow-hidden border-bordercolor flex justify-between items-center">
+          <div className=" mt-2 rounded-lg outline-none border overflow-hidden border-bordercolor flex justify-between items-center">
             <input
               type="text"
               placeholder="This is the first thing people will see"
@@ -125,7 +125,7 @@ const ProfileForm = () => {
           <input
             type="text"
             placeholder="This is the first thing people will see"
-            className=" w-full text-sm  flex-1 p-2  border  rounded-lg mt-1 border-bordercolor    outline-none "
+            className=" w-full text-sm  flex-1 p-2  border  rounded-lg mt-2 border-bordercolor    outline-none "
           />
         </div>
         <div className=" mt-3">
@@ -139,7 +139,7 @@ const ProfileForm = () => {
           <textarea
             name=""
             rows={4}
-            className=" w-full text-sm  flex-1 p-2  border  rounded-lg mt-1 border-bordercolor    outline-none "
+            className=" w-full text-sm  flex-1 p-2  border  rounded-lg mt-2 border-bordercolor     outline-none "
             placeholder="Tell us more about yourself, your interests and you experience"
             id=""
           ></textarea>
@@ -154,7 +154,7 @@ const ProfileForm = () => {
           <div className=" mt-1 flex gap-2 items-center">
             <select
               name=""
-              className=" py-2 px-3 border text-sm  rounded-lg border-bordercolor  text-secondarys1 outline-none  "
+              className=" py-2 px-3 border text-sm  rounded-lg border-bordercolor  text-secondarys1 !mt-1 outline-none  "
               id=""
             >
               <option value="">Select</option>
@@ -162,7 +162,7 @@ const ProfileForm = () => {
             <input
               type="text"
               placeholder="Add Social URL"
-              className=" w-full text-sm  flex-1 p-2  border  rounded-lg border-bordercolor    outline-none "
+              className=" w-full text-sm  flex-1 p-2  border  rounded-lg border-bordercolor    !mt-2 outline-none "
             />
             <button className=" p-2 rounded-xl bg-[#E5E5E5]  h-10 w-10 flex justify-center items-center">
               <img

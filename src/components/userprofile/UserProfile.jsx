@@ -44,7 +44,7 @@ const UserProfile = () => {
                 <img
                   src="/assets/images/profile/Frame 18605.png"
                   alt=""
-                  className=" sm:w-[200px]  h-16 ml-3 mt-auto object-contain"
+                  className=" sm:w-[200px]  h-16 md:ml-3 mt-auto object-contain"
                 />
               </div>
             </div>
@@ -89,7 +89,7 @@ const UserProfile = () => {
             </div>
           </div>
         </div>
-        <div className="mt-7 flex gap-5 max-md: justify-center">
+        <div className="mt-7 flex gap-5 max-md:justify-center">
           <div className="form-heading  rounded-[24px] !text-xs px-7 border-l-2 border-bordercolor bg-skygreen py-2 text-center">
             Status - <span className=" text-secondarys1">Offline</span>
           </div>
@@ -134,7 +134,7 @@ const UserProfile = () => {
 
           </ul>
         </div>
-        <div className=" lg:mt-10 mt-8 flex gap-6 lg:justify-start items-center lg:flex-wrap overflow-x-auto">
+        <div className=" lg:mt-10 mt-8 flex gap-6 lg:justify-start items-center lg:flex-wrap overflow-x-auto pb-2">
         {[
           "Analytics",
           "Product",
