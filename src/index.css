@@ -142,3 +142,11 @@ body {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+.shade-cyan{
+  background: radial-gradient(circle at 50% 50%, 
+  rgb(76, 107, 197) 10%, 
+  rgb(0, 188, 212) 40%, 
+  rgb(0, 188, 212) 60%, 
+  rgb(0, 188, 212) 80%, 
+  rgb(127, 0, 2) 100%);
+}

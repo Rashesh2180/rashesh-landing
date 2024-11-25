@@ -6,22 +6,22 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { NavLink } from "react-router-dom";
 
 const CarasolHero = () => {
   return (
     <div className="max-w-[1650px] mx-auto xl:px-16 px-5 lg:px-10 ">
       <Swiper
-      autoplay={{
-        delay: 10000,
-        
-        disableOnInteraction: false,
-      }}
-      pagination={{
-        clickable: true,
-      }}
-      modules={[Autoplay, Pagination, Navigation]}
+        autoplay={{
+          delay: 10000,
+
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper home-hero-carasol"
       >
         <SwiperSlide>
@@ -125,13 +125,13 @@ const CarasolHero = () => {
             </div>
 
             <div className=" w-full lg:max-w-[58%] h-[300px] flex justify-center flex-col max-lg:mt-5   items-center lg:h-[602px] relative">
-             <div className=" h-full w-full pt-5">
-             <img
-                src="/assets/images/hero/Map.png"
-                alt=""
-                className=" h-full w-full "
-              />
-             </div>
+              <div className=" h-full w-full pt-5">
+                <img
+                  src="/assets/images/hero/Map.png"
+                  alt=""
+                  className=" h-full w-full "
+                />
+              </div>
               <div className="border border-primary rounded-2xl p-3 shadow-2xl lg:absolute  -bottom-10 lg:left-[60%] transform lg:-translate-x-1/2 font-inter text-secondary text-xs max-w-[230px]">
                 <span className=" font-semibold">Work</span> from our hubs USA,
                 Canada, Europe, India, Australia, Philippine
@@ -240,20 +240,21 @@ const CarasolHero = () => {
             </div>
 
             <div className=" w-full lg:max-w-[58%] h-[300px] flex justify-center flex-col max-lg:mt-5   items-center lg:h-[602px] relative">
-             <div className=" h-full w-full pt-5">
-             <img
-                src="/assets/images/hero/Map.png"
-                alt=""
-                className=" h-full w-full "
-              />
-             </div>
+              <div className=" h-full w-full pt-5">
+                <img
+                  src="/assets/images/hero/Map.png"
+                  alt=""
+                  className=" h-full w-full "
+                />
+              </div>
               <div className="border border-primary rounded-2xl p-3 shadow-2xl lg:absolute  -bottom-10 lg:left-[60%] transform lg:-translate-x-1/2 font-inter text-secondary text-xs max-w-[230px]">
                 <span className=" font-semibold">Work</span> from our hubs USA,
                 Canada, Europe, India, Australia, Philippine
               </div>
             </div>
           </div>
-        </SwiperSlide>{" "}  <SwiperSlide>
+        </SwiperSlide>{" "}
+        <SwiperSlide>
           <div className="  max-lg:gap-5 lg:h-screen h-full max-lg:py-5 flex max-lg:flex-col justify-center items-center gap-[14.5px]">
             <div className=" lg:max-w-[42%] w-full  ">
               <div className=" max-w-[212px]">
@@ -354,20 +355,21 @@ const CarasolHero = () => {
             </div>
 
             <div className=" w-full lg:max-w-[58%] h-[300px] flex justify-center flex-col max-lg:mt-5   items-center lg:h-[602px] relative">
-             <div className=" h-full w-full pt-5">
-             <img
-                src="/assets/images/hero/Map.png"
-                alt=""
-                className=" h-full w-full "
-              />
-             </div>
+              <div className=" h-full w-full pt-5">
+                <img
+                  src="/assets/images/hero/Map.png"
+                  alt=""
+                  className=" h-full w-full "
+                />
+              </div>
               <div className="border border-primary rounded-2xl p-3 shadow-2xl lg:absolute  -bottom-10 lg:left-[60%] transform lg:-translate-x-1/2 font-inter text-secondary text-xs max-w-[230px]">
                 <span className=" font-semibold">Work</span> from our hubs USA,
                 Canada, Europe, India, Australia, Philippine
               </div>
             </div>
           </div>
-        </SwiperSlide>{" "}  <SwiperSlide>
+        </SwiperSlide>{" "}
+        <SwiperSlide>
           <div className="  max-lg:gap-5 lg:h-screen h-full max-lg:py-5 flex max-lg:flex-col justify-center items-center gap-[14.5px]">
             <div className=" lg:max-w-[42%] w-full  ">
               <div className=" max-w-[212px]">
@@ -468,13 +470,13 @@ const CarasolHero = () => {
             </div>
 
             <div className=" w-full lg:max-w-[58%] h-[300px] flex justify-center flex-col max-lg:mt-5   items-center lg:h-[602px] relative">
-             <div className=" h-full w-full pt-5">
-             <img
-                src="/assets/images/hero/Map.png"
-                alt=""
-                className=" h-full w-full "
-              />
-             </div>
+              <div className=" h-full w-full pt-5">
+                <img
+                  src="/assets/images/hero/Map.png"
+                  alt=""
+                  className=" h-full w-full "
+                />
+              </div>
               <div className="border border-primary rounded-2xl p-3 shadow-2xl lg:absolute  -bottom-10 lg:left-[60%] transform lg:-translate-x-1/2 font-inter text-secondary text-xs max-w-[230px]">
                 <span className=" font-semibold">Work</span> from our hubs USA,
                 Canada, Europe, India, Australia, Philippine
@@ -484,30 +486,39 @@ const CarasolHero = () => {
         </SwiperSlide>{" "}
       </Swiper>
 
-    
-        <div className=" w-full mb-20 overflow-x-scroll gap-2 rounded-[20px] px-10 py-5 flex justify-between items-center shadow-xl   bg-white">
-          <NavLink className=" font-roboto text-sm font-normal text-nowrap text-primary">AWS</NavLink>
-          <NavLink className=" font-roboto text-sm font-normal text-nowrap text-primary">Google Cloud</NavLink>
-          <NavLink className=" font-roboto text-sm font-normal text-nowrap text-primary">IOS</NavLink>
-          <NavLink className=" font-roboto text-sm font-normal text-nowrap text-primary">Android</NavLink>
-          <NavLink className=" font-roboto text-sm font-normal text-nowrap text-primary">React JS</NavLink>
-          <NavLink className=" font-roboto text-sm font-normal text-nowrap text-primary"> My SQL</NavLink>
-          <NavLink className=" font-roboto text-sm font-normal text-nowrap text-primary">Angular</NavLink>
-          <NavLink className=" font-roboto text-sm font-normal text-nowrap text-primary">Adobe Illustrator</NavLink>
-          <NavLink className=" font-roboto text-sm font-normal text-nowrap text-primary">PHP</NavLink>
-          <NavLink className=" font-roboto text-sm font-black text-nowrap text-primary ">Show All</NavLink>
-
-
-
-
-          
-
-
-
-
-
-
-        </div>
+      <div className=" w-full mb-20 overflow-x-scroll gap-2 rounded-[20px] px-10  flex justify-between items-center shadow-xl   bg-white">
+        <NavLink className=" font-roboto text-sm font-normal text-nowrap text-primary">
+          AWS
+        </NavLink>
+        <NavLink className=" font-roboto text-sm font-normal text-nowrap text-primary">
+          Google Cloud
+        </NavLink>
+        <NavLink className=" font-roboto text-sm font-normal text-nowrap text-primary">
+          IOS
+        </NavLink>
+        <NavLink className=" font-roboto text-sm font-normal text-nowrap text-primary">
+          Android
+        </NavLink>
+        <NavLink className=" font-roboto text-sm font-normal text-nowrap text-primary">
+          React JS
+        </NavLink>
+        <NavLink className=" font-roboto text-sm font-normal text-nowrap text-primary">
+          {" "}
+          My SQL
+        </NavLink>
+        <NavLink className=" font-roboto text-sm font-normal text-nowrap text-primary">
+          Angular
+        </NavLink>
+        <NavLink className=" font-roboto text-sm font-normal text-nowrap text-primary">
+          Adobe Illustrator
+        </NavLink>
+        <NavLink className=" font-roboto text-sm font-normal text-nowrap text-primary">
+          PHP
+        </NavLink>
+        <NavLink className=" font-roboto text-sm font-black text-nowrap text-primary ">
+          Show All
+        </NavLink>
+      </div>
     </div>
   );
 };

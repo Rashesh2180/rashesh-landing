@@ -25,7 +25,13 @@ const HowWork = () => {
         lacus vel facilisis.
       </p>
       <div className=" mt-10 w-full border border-primary rounded-[60px] p-5 shadow-xl ">
-        <div className="bg-gradient-to-r from-indigo-600 to-violet-700 overflow-hidden  flex-wrap max-sm:justify-center relative  rounded-[40px]  w-full flex justify-between items-center">
+        <div
+          style={{
+            background:
+              "radial-gradient(circle at 50% 50%, #4c6bc5 10%, #00bcd4 40%, #7f00ff 100%)",
+          }}
+          className=" overflow-hidden  flex-wrap max-sm:justify-center relative  rounded-[40px]  w-full flex justify-between items-center"
+        >
           <div className=" hover:shadow-xl hover:rounded-3xl hover:bg-white hover:bg-opacity-10 h-full">
             <div className=" py-10 max-w-[280px] px-10">
               <h1 className=" font-bold font-roboto text-lg  text-white">
@@ -78,9 +84,16 @@ const HowWork = () => {
           </div>
         </div>
       </div>
-      <img src="/assets/svg/work/arrow.svg" alt="" className=" w-[150px] h-[87px] absolute top-24 left-2 max-md:hidden"  />
-      <img src="/assets/svg/work/plane.svg" alt="" className=" w-[180px] h-[150px] absolute top-0 right-10 max-md:hidden"  />
-
+      <img
+        src="/assets/svg/work/arrow.svg"
+        alt=""
+        className=" w-[150px] h-[87px] absolute top-24 left-2 max-md:hidden"
+      />
+      <img
+        src="/assets/svg/work/plane.svg"
+        alt=""
+        className=" w-[180px] h-[150px] absolute top-0 right-10 max-md:hidden"
+      />
     </div>
   );
 };
