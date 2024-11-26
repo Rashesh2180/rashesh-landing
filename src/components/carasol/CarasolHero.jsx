@@ -26,7 +26,7 @@ const CarasolHero = () => {
       >
         <SwiperSlide>
           <div className="  max-lg:gap-5 lg:h-screen h-full max-lg:py-5 flex max-lg:flex-col justify-center items-center gap-[14.5px]">
-            <div className=" lg:max-w-[42%] w-full  ">
+            <div className=" lg:max-w-[45%] w-full  ">
               <div className=" max-w-[212px]">
                 <div className=" mt-8  relative  max-lg:flex flex-col-reverse gap-5 ">
                   <div className=" text-sm font-medium font-raleway px-6 py-[10px] rounded-[10.2px] bg-primaryp1 text-center ">
@@ -39,7 +39,7 @@ const CarasolHero = () => {
                   />
                 </div>
               </div>
-              <p className=" mt-[21px] xl:text-[40px] text-3xl max-w-[551px] font-normal leading-[50px] font-daysOne">
+              <p className=" mt-[21px] xl:text-[36px] text-3xl max-w-[551px] font-normal leading-[50px] font-daysOne">
                 <span className=" text-primary">Connecting</span> the Best{" "}
                 <br /> Talent Worldwide with <br />{" "}
                 <span className=" text-primary">Talent Spine</span>
@@ -124,13 +124,10 @@ const CarasolHero = () => {
               </div>
             </div>
 
-            <div className=" w-full lg:max-w-[58%] h-[300px] flex justify-center flex-col max-lg:mt-5   items-center lg:h-[602px] relative">
-              <div className=" h-full w-full pt-5">
-                <img
-                  src="/assets/images/hero/Map.png"
-                  alt=""
-                  className=" h-full w-full "
-                />
+            <div className=" w-full lg:max-w-[55%] h-[300px] flex justify-center flex-col max-lg:mt-5   items-center lg:h-[602px] relative">
+              <div className=" h-full w-full pt-5 create-bg">
+                
+            
               </div>
               <div className="border border-primary rounded-2xl p-3 shadow-2xl lg:absolute  -bottom-10 lg:left-[60%] transform lg:-translate-x-1/2 font-inter text-secondary text-xs max-w-[230px]">
                 <span className=" font-semibold">Work</span> from our hubs USA,
@@ -481,12 +478,12 @@ const CarasolHero = () => {
                 <span className=" font-semibold">Work</span> from our hubs USA,
                 Canada, Europe, India, Australia, Philippine
               </div>
-            </div>
+            </div>  
           </div>
         </SwiperSlide>{" "}
       </Swiper>
 
-      <div className=" w-full mb-20 overflow-x-scroll gap-2 rounded-[20px] px-10  flex justify-between items-center shadow-xl   bg-white">
+      <div className=" w-full mb-20 overflow-x-auto gap-2 rounded-[20px] px-10  flex justify-between items-center shadow-xl   bg-white">
         <NavLink className=" font-roboto text-sm font-normal text-nowrap text-primary">
           AWS
         </NavLink>
